@@ -1,0 +1,250 @@
+/* external font */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+body {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+
+/* header text */
+
+.nav-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: #3E3E3E;
+}
+
+#header-text {
+    color: #231D4F;
+}
+
+
+/* header text end */
+
+
+/* booking section */
+
+.blue-check {
+    color: #058eb8;
+    border-radius: 50px;
+}
+
+.btn-booking {
+    display: inline-block;
+    color: #ffffff;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 76px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #058eb8;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-booking:hover {
+    background: #c4c5c5;
+    color: #058eb8;
+    box-shadow: 0 6px 20px rgba(43, 43, 43, 0.23);
+}
+
+
+/* booking section end */
+
+
+/* image gallery */
+
+.visit {
+    background-image: url('../images/venue.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.btn-visit {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    outline: none;
+    padding: 12px 34px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.btn-visit:disabled {
+    pointer-events: none;
+}
+
+.btn-visit:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.btn-visit:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+/* image gallery end  */
+
+
+/* package section */
+
+.special-package {
+    background-color: #3F87F5;
+    border-radius: 30px;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px 2px #3F87F5;
+}
+
+.border-package {
+    border-radius: 30px;
+}
+
+.btn-package-special {
+    display: inline-block;
+    color: #058eb8;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 76px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #fff;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-package-special:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+}
+
+.package-header {
+    color: #231D4F;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/* package section end */
+
+
+/* media queries */
+
+@media only screen and (max-width:1500px) {
+    .carousel-caption {
+        padding-bottom: 8%;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+    .carousel-caption p {
+        font-size: 18px;
+    }
+    .btn-package-special {
+        padding: 0 56px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .faq-img {
+        margin-top: 20px;
+    }
+    .carousel-caption h1 {
+        font-size: 32px;
+    }
+    .btn-package-special {
+        padding: 0 56px;
+        font-size: 14px;
+    }
+    #package {
+        width: 80%;
+    }
+    .carousel-img>img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+    .carousel-caption {
+        padding-bottom: 6%;
+    }
+    .carousel-caption p {
+        font-size: 12px;
+    }
+    .faq-img {
+        margin-top: 20px;
+    }
+    .btn-package-special {
+        padding: 0 46px;
+        font-size: 14px;
+    }
+    #package {
+        width: 80%;
+    }
+    .btn-visit {
+        padding: 6px 14px;
+    }
+    .carousel-img>img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    #carouselFull {
+        display: none;
+    }
+    #about {
+        margin-top: 80px;
+    }
+    .faq-img {
+        margin-top: 20px;
+    }
+    .btn-package-special {
+        padding: 0 40px;
+        font-size: 14px;
+    }
+    #package {
+        width: 80%;
+    }
+    .btn-visit {
+        padding: 4px 12px;
+    }
+}
+
+
+/* media queries end */
